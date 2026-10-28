@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haramham Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto d-flex align-items-center" href="#home">
+        <img src="./images/Blogo.png" alt="HARAMHAM Logo" class="brand-logo" />
+        <span>HARAMHAM</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title d-flex align-items-center" id="offcanvasNavbarLabel">
+            <img src="./images/Blogo.png" alt="HARAMHAM Logo" class="brand-logo" />
+            <span>HARAMHAM</span>
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link mx-lg-2 active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="login-button" type="button" data-bs-toggle="modal" data-bs-target="#authModal">Sign In / Sign Up</button>
+    </div>
+  </nav>
+
+  <section class="hero-section" id="home">
+    <div class="container hero-content">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-lg-6">
+          <p class="eyebrow">Freshly baked daily</p>
+          <h1>Warm bakery favorites made with love.</h1>
+          <p class="lead hero-copy">From soft banana loaf to rich cinnamon rolls, HARAMHAM brings handcrafted pastries and sweet comfort to every table.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn hero-btn primary-btn">Explore Products</a>
+            <a href="#about" class="btn hero-btn secondary-btn">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="about-image-wrapper">
+            <img src="images/hero.png" alt="Bakery shelves and pastries" class="about-image" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="section-label">About Us</p>
+          <h2>Freshly baked moments for everyday life.</h2>
+          <p>At HARAMHAM Bakery, we believe every warm pastry tells a story. We combine traditional techniques with fresh ingredients to create breads, cakes, and pastries that feel comforting, special, and full of care.</p>
+          <p>Whether it is a quick breakfast treat or a celebration dessert, our bakery is built around quality, warmth, and flavor that brings people together.</p>
+          <ul class="about-list">
+            <li>Made from scratch with quality ingredients</li>
+            <li>Freshly baked every morning</li>
+            <li>Perfect for gifting, events, and daily treats</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-heading text-center">
+        <p class="section-label">Our Signature Picks</p>
+        <h2>Handcrafted products you’ll crave again.</h2>
+      </div>
+      <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel"></div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-heading text-center">
+        <p class="section-label">Our Services</p>
+        <h2>Everything your bakery needs, all in one place.</h2>
+      </div>
+      <div id="servicesGrid" class="row g-4"></div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading text-center">
+        <p class="section-label">Contact Us</p>
+        <h2>Visit, call, or message us.</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4"><div class="contact-card"><h3>Call Us</h3><p><a href="tel:+639123456789">+63 912 345 6789</a></p></div></div>
+        <div class="col-lg-4"><div class="contact-card"><h3>Email</h3><p><a href="mailto:haramhambakery@gmail.com">haramhambakery@gmail.com</a></p></div></div>
+        <div class="col-lg-4"><div class="contact-card"><h3>Visit Us</h3><p>Bradley Street, Quezon City, Philippines</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content auth-modal">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="authModalLabel">Welcome to HARAMHAM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-pills mb-3" id="authTabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="signin-tab" data-bs-toggle="pill" data-bs-target="#signin" type="button" role="tab">Sign In</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup" type="button" role="tab">Sign Up</button></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="signin" role="tabpanel">
+              <form>
+                <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" placeholder="you@gmail.com" /></div>
+                <div class="mb-3"><label class="form-label">Password</label><input type="password" class="form-control" placeholder="Enter password" /></div>
+                <button type="submit" class="btn auth-btn w-100">Sign In</button>
+              </form>
+            </div>S
+            <div class="tab-pane fade" id="signup" role="tabpanel">
+              <form>
+                <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Your name" /></div>
+                <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" placeholder="you@gmail.com" /></div>
+                <div class="mb-3"><label class="form-label">Password</label><input type="password" class="form-control" placeholder="Create password" /></div>
+                <button type="submit" class="btn auth-btn w-100">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>© 2026 HARAMHAM Bakery • Freshly baked with care.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const products = [
+      { name: 'Banana Loaf', price: '₱180', image: 'images/bananaloaf.jpg', text: 'Soft, moist, and gently sweet with a buttery finish.' },
+      { name: 'Banana Muffins', price: '₱150', image: 'images/bananamuffins.jpg', text: 'Perfectly fluffy bites with a comforting banana flavor.' },
+      { name: 'Carrot Cake', price: '₱220', image: 'images/carrotcake.jpg', text: 'A rich, spiced cake layered with smooth cream frosting.' },
+      { name: 'Cassava Cake', price: '₱200', image: 'images/cassavacake.jpg', text: 'Classic Filipino dessert with a creamy, buttery texture.' },
+      { name: 'Choco Custard', price: '₱210', image: 'images/chococustard.jpg', text: 'Silky custard richness blended with a deep chocolate taste.' },
+      { name: 'Cinnamon Rolls', price: '₱170', image: 'images/cinnamonrolls.jpg', text: 'Soft swirls coated in cinnamon sugar and glazed to perfection.' },
+      { name: 'Ensaymada', price: '₱140', image: 'images/ensaymada.jpg', text: 'Buttery, brioche-like bread topped with a light sprinkle of cheese.' },
+      { name: 'Lemon Bread', price: '₱190', image: 'images/lemonbread.jpg', text: 'Bright citrus flavor with a tender crumb and fresh finish.' },
+      { name: 'Yema Cake', price: '₱230', image: 'images/yemacake.jpg', text: 'A sweet, creamy classic that turns every bite into a treat.' }
+    ];
+
+    const services = [
+      { icon: '🍞', title: 'Custom Baking', text: 'Freshly baked breads, cakes, and pastries made to order for your family, office, or events.' },
+      { icon: '🎂', title: 'Celebration Cakes', text: 'Birthday, graduation, and milestone cakes designed to match your theme and taste preferences.' },
+      { icon: '🥐', title: 'Pastry Delivery', text: 'Fresh pastries and baked goods delivered right to your home, school, office, or gathering.' },
+      { icon: '☕', title: 'Breakfast Bundles', text: 'Simple morning essentials for cafés, offices, and events with pastries, breads, and coffee pairings.' },
+      { icon: '🎁', title: 'Gift Boxes', text: 'Curated bakery gift sets for anniversaries, thank-you moments, and thoughtful corporate gifts.' },
+      { icon: '🏪', title: 'Retail & Event Support', text: 'Bakery supplies, ready-made desserts, and event-friendly pastry trays for gatherings and parties.' }
+    ];
+
+    const chunk = (arr, size) => {
+      const result = [];
+      for (let i = 0; i < arr.length; i += size) {
+        result.push(arr.slice(i, i + size));
+      }
+      return result;
+    };
+
+    const productSlides = chunk(products, 3);
+
+    const productHtml = productSlides.map((slide, slideIndex) => {
+      const cards = slide.map(product => `
+        <div class="col-md-4">
+          <article class="card product-card h-100 border-0">
+            <div class="product-image-wrap"><img src="${product.image}" alt="${product.name}" /></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="card-title">${product.name}</h3>
+                <span class="price">${product.price}</span>
+              </div>
+              <p class="card-text">${product.text}</p>
+              <button class="btn order-btn" type="button">Order now</button>
+            </div>
+          </article>
+        </div>
+      `).join('');
+
+      return `
+        <div class="carousel-item ${slideIndex === 0 ? 'active' : ''}">
+          <div class="row g-4">${cards}</div>
+        </div>
+      `;
+    }).join('');
+
+    const indicators = productSlides.map((_, index) => `
+      <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}" aria-label="Slide ${index + 1}"></button>
+    `).join('');
+
+    document.getElementById('productsCarousel').innerHTML = `
+      <div class="carousel-indicators">${indicators}</div>
+      <div class="carousel-inner">${productHtml}</div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    `;
+
+    document.getElementById('servicesGrid').innerHTML = services.map(service => `
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon">${service.icon}</div>
+          <h3>${service.title}</h3>
+          <p>${service.text}</p>
+        </div>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>
